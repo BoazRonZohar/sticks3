@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://byinm80wgmwj6"]
+
+[ext_resource type="Script" uid="uid://i0753v7l3p0g" path="res://scripts/MainScene.gd" id="1_w2twt"]
+[ext_resource type="AudioStream" uid="uid://daobepdnavqrq" path="res://assets/sounds/collision.wav" id="4_gubc5"]
+[ext_resource type="AudioStream" uid="uid://c8apwv085w7s3" path="res://assets/sounds/fan.wav" id="4_pu3yx"]
+[ext_resource type="AudioStream" uid="uid://klbqwtlqkgqx" path="res://assets/sounds/merge.wav" id="5_rt2n2"]
+
+[node name="MainScene" type="Node2D"]
+script = ExtResource("1_w2twt")
+
+[node name="Sticks" type="Node2D" parent="."]
+
+[node name="CompositeBodies" type="Node2D" parent="."]
+
+[node name="Audio_Collision" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_gubc5")
+
+[node name="Audio_Merge" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_rt2n2")
+
+[node name="Audio_Fan" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_pu3yx")
+volume_db = -8.0

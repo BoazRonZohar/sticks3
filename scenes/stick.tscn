@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cl2tbbp257m36"]
+
+[ext_resource type="Script" uid="uid://bts0ygg0ryge" path="res://scripts/Stick.gd" id="1_i3vek"]
+
+[node name="Stick" type="Node2D"]
+script = ExtResource("1_i3vek")
+
+[node name="Line" type="Line2D" parent="."]
+width = 4.0
+default_color = Color(0.976471, 0.00392157, 0.00392157, 1)
